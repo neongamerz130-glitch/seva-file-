@@ -4,138 +4,6 @@
   <meta charset="UTF-8">
   <title>Cybercrime Project File</title>
   <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: #000;
-      margin: 0;
-      padding: 20px;
-      color: #fff;
-      overflow-x: hidden;
-    }
-
-    /* Falling binary effect */
-    canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-    .page {
-      width: 800px;
-      margin: 30px auto;
-      padding: 55px;
-      background: rgba(17, 17, 17, 0.9);
-      border: 2px solid #00e5ff;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,229,255,0.6);
-      position: relative;
-    }
-
-    h1, h2, h3 {
-      text-align: center;
-      color: #00e5ff;
-    }
-    .title {
-      font-size: 40px;
-      color: #ffea00;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      text-shadow: 0 0 8px #ffea00;
-    }
-    .subtitle {
-      text-align: center;
-      font-size: 18px;
-      margin-top: -10px;
-      color: #bbb;
-    }
-    .slogan {
-      font-size: 24px;
-      text-align: center;
-      color: #ff1744;
-      text-shadow: 0 0 8px #ff1744;
-      margin: 20px 0;
-    }
-    .list {
-      margin-left: 40px;
-      font-size: 18px;
-      color: #ddd;
-    }
-    a {
-      color: #00e5ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .footer {
-      text-align: right;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #888;
-    }
-    img {
-      display: block;
-      margin: 20px auto;
-      width: 80%;
-      border: 2px solid #00e5ff;
-      border-radius: 10px;
-      box-shadow: 0 0 15px #00e5ff;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Falling Matrix Effect -->
-  <canvas id="matrix"></canvas>
-  <script>
-    const canvas = document.getElementById("matrix");
-    const ctx = canvas.getContext("2d");
-
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
-
-    const binary = "01";
-    const font_size = 16;
-    const columns = canvas.width / font_size;
-
-    const drops = [];
-    for (let x = 0; x < columns; x++) drops[x] = 1;
-
-    function draw() {
-      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      ctx.fillStyle = "#0F0"; // Green binary
-      ctx.font = font_size + "px monospace";
-
-      for (let i = 0; i < drops.length; i++) {
-        const text = binary[Math.floor(Math.random() * binary.length)];
-        ctx.fillText(text, i * font_size, drops[i] * font_size);
-
-        if (drops[i] * font_size > canvas.height && Math.random() > 0.975)
-          drops[i] = 0;
-        drops[i]++;
-      }
-    }
-    setInterval(draw, 33);
-
-    // Resize handler
-    window.addEventListener("resize", () => {
-      canvas.height = window.innerHeight;
-      canvas.width = window.innerWidth;
-    });
-  </script>
-
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Cybercrime Project File</title>
-  <style>
     body 
     {
      
@@ -150,22 +18,21 @@
       width: 800px;
       margin: 30px auto;
       padding: 40px;
-      background: #070707;
-      border: 2px solid #00b7ff;
+      background: #111;
+      border: 2px solid #00e5ff;
       border-radius: 10px;
-      box-shadow: 0 0 30px rgba(0,229,255,0.6);
+      box-shadow: 0 0 20px rgba(0,229,255,0.6);
     }
     h1, h2, h3 {
       text-align: center;
       color: #00e5ff;
-      text-shadow: 0 0 10px #ff0d0d;
     }
     .title {
       font-size: 36px;
       color: #ffea00;
       text-transform: uppercase;
       letter-spacing: 2px;
-      text-shadow: 0 0 12px #ffea00;
+      text-shadow: 0 0 8px #ffea00;
     }
     .subtitle {
       text-align: center;
@@ -239,8 +106,8 @@
     <p>This is to certify that the project work entitled <b>“Cyber Crime – Digital Threats & Security”</b> has been successfully completed by our group during the academic year 2025–26.</p>
     <p>This project is submitted in partial fulfillment of Information Technology subject requirements.</p>
     <br><br>
-    <p>name of teacher--miss sakshi bhandari✨</p>
-    <p></p>
+    <p>Signature of Teacher __________________</p>
+    <p>Signature of Principal ________________</p>
   </div>
 
   <!-- Page 3: Acknowledgment -->
@@ -258,24 +125,24 @@
 
   <div class="page">
     <h2>Group Photo</h2>
-    <img src"" alt="Group Photo 2">
+    <img src="31818636-25e1-44df-8f24-0adc9c59e3fb.png" alt="Group Photo 2">
   </div>
 
   <div class="page">
-    <h2>fie cover</h2>
-    <img src="C:\Users\hp\Documents\old\cover.webp" alt="Laptop Photo">
+    <h2>Group Photo</h2>
+    <img src="aa1445d8-f517-47af-aafc-d1047d424872.png" alt="Laptop Photo">
   </div>
 
   <!-- Page 7: Member Names -->
   <div class="page">
     <h2>Group Members 👥</h2>
     <div class="list">
-      <p>1. Chinmay Sati</p>
+      <p>1. Chinmay</p>
       <p>2. Ayush Bhatt</p>
-      <p>3. Arush Sati</p>
-      <p>4. Ankit Pardali</p>
-      <p>5. Aryan Jawan</p>
-      <p>6. Naitik Thaplyal</p>
+      <p>3. Arush</p>
+      <p>4. Ankit</p>
+      <p>5. Aryan</p>
+      <p>6. Naitik</p>
     </div>
     <br>
     <p><b>Submitted To:</b> Miss Sakshi Bhandari ✨</p>
@@ -399,19 +266,44 @@
       <li><a href="https://www.cert-in.org.in" target="_blank">https://www.cert-in.org.in</a></li>
       <li>Various news articles and journals</li>
     </ul>
-  </div>
-  <div class="page">
-    <h2>CREATED BY CHINMAY SATI</h2>
-    <ul class="list">
-      <li>for seva project file</li>
-      <li>woth suppor of group member who take my work and give me time to make it</li>
-      <li>we have work hard for this project i hope for getting 5 marks and aso hope you will ignore the img in file thankx</li>
-    </ul>
     <div class="footer">Back Cover</div>
   </div>
+  <script>
+    const canvas = document.getElementById("matrixCanvas");
+    const ctx = canvas.getContext("2d");
 
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+
+    const binary = "01";
+    const fontSize = 16;
+    const columns = canvas.width / fontSize;
+
+    const drops = [];
+    for (let x = 0; x < columns; x++) {
+      drops[x] = 1;
+    }
+
+    function draw() {
+      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = "#0F0"; // green
+      ctx.font = fontSize + "px monospace";
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = binary.charAt(Math.floor(Math.random() * binary.length));
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+        drops[i]++;
+      }
+    }
+
+    setInterval(draw, 35);
   </script>
 
 </body>
 </html>
-
